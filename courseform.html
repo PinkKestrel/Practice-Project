@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ornithology Course</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <button class="theme-button">Change theme</button>
+    <div class="container">
+      <h1>🪺Join our study program</h1>
+      <h2>(Please fill in the form)</h2>
+      <form action="/submit">
+        <div class="group-form">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required autofocus />
+        </div>
+        <div class="group-form">
+          <label for="surname">Surname</label>
+          <input type="text" name="surname" id="surname" required />
+        </div>
+        <div class="group-form">
+          <label for="birthday">Date of birth</label>
+          <input type="date" name="birthday" id="birthday" required />
+        </div>
+        <div class="group-form">
+          <label for="nationality">Nationality</label>
+          <input type="text" name="nationality" id="nationality" required />
+        </div>
+        <div class="group-form">
+          <label for="country">Country of residence</label>
+          <input type="text" name="country" id="country" required />
+        </div>
+        <div class="group-form">
+          <label for="e-mail">Email address</label>
+          <input type="email" name="e-mail" id="e-mail" required />
+        </div>
+        <div class="group-form">
+          <label for="phonenumber">Phone number (optional) </label>
+          <input type="tel" name="phonenumber" id="phonenumber" />
+        </div>
+        <div class="group-form">
+          <label for="knowledge">How much do you know about birds? </label>
+          <select name="knowledge" id="knowledge" required>
+            <option value="novice">I have no clue!</option>
+            <option value="beginner">I'm a beginner</option>
+            <option value="competent">I'm quite competent</option>
+            <option value="expert">I'm an expert!</option>
+          </select>
+        </div>
+        <div class="group-form">
+          <label for="study-hours"
+            >How many hours per week could you commit to study?
+          </label>
+          <input type="number" name="study-hours" id="study-hours" />
+        </div>
+        <div class="group-form">
+          <label for="goals"
+            >What are your goals in regards to studying with us?
+          </label>
+          <textarea
+            name="goals"
+            id="goals"
+            rows="5"
+            cols="45"
+            placeholder="I would love to become an advanced learner in exotic birds 🦜"
+          ></textarea>
+        </div>
+        <div class="group-form">
+          <fieldset>
+            <legend>Do you agree to the terms*?</legend>
+            <label> <input type="radio" name="radio" value="yes" />Yes </label>
+            <label> <input type="radio" name="radio" value="no" />No </label>
+          </fieldset>
+          <a href="https://www.lipsum.com/feed/html" target="_blank"
+            ><p>*Read Terms and Conditions</p></a
+          >
+          <button type="submit" class="submit-button">Submit form</button>
+        </div>
+      </form>
+    </div>
+    <footer>
+      Coded with 🪶 <span>by Carmen</span> with HTML, CSS and JavaScript
+    </footer>
+    <script src="src/app.js"></script>
+  </body>
+</html>
